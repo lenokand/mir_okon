@@ -1,0 +1,303 @@
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap);
+/* line 3, src/layout/components/scss/reset.scss */
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0 none;
+  outline: none
+}
+/* line 14, src/layout/components/scss/reset.scss */
+body {
+  min-height: 100vh;
+  line-height: 1
+}
+/* line 20, src/layout/components/scss/reset.scss */
+ul[class],
+ol[class] {
+  list-style: none
+}
+/* line 26, src/layout/components/scss/reset.scss */
+img {
+  max-width: 100%;
+  display: block
+}
+/* line 32, src/layout/components/scss/reset.scss */
+form,
+input,
+button,
+select,
+option,
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: transparent
+}
+/* line 43, src/layout/components/scss/reset.scss */
+table,
+thead,
+tfoot,
+tbody,
+tr,
+th,
+td {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none
+}
+/* line 1, src/layout/components/scss/general.scss */
+html {
+  scroll-behavior: smooth
+}
+/* line 4, src/layout/components/scss/general.scss */
+body {
+  background: #fff;
+  font-family: 'Montserrat',sans-serif
+}
+/* line 7, src/layout/components/scss/general.scss */
+body.show {
+  overflow: hidden
+}
+/* line 11, src/layout/components/scss/general.scss */
+.page {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.4
+}
+/* line 16, src/layout/components/scss/general.scss */
+.page-container {
+  width: 100%
+}
+/* line 1, src/layout/blocks/header/header.scss */
+.container {
+  max-width: 1170px;
+  margin: auto
+}
+/* line 6, src/layout/blocks/header/header.scss */
+header {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #deecec;
+  margin-bottom: 60px
+}
+/* line 13, src/layout/blocks/header/header.scss */
+header .container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between
+}
+/* line 20, src/layout/blocks/header/header.scss */
+header .logo {
+  max-width: 105px;
+  font-weight: 800;
+  font-size: 43px
+}
+/* line 27, src/layout/blocks/header/header.scss */
+header .logo img {
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center;
+  object-position: center;
+  -webkit-filter: drop-shadow(3px 6px 6px rgba(0, 0, 0, 0.61));
+  filter: drop-shadow(3px 6px 6px rgba(0, 0, 0, 0.61));
+  margin-bottom: 5px
+}
+/* line 36, src/layout/blocks/header/header.scss */
+header .logo .subtitle {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  width: 100%;
+  text-align: center
+}
+/* line 45, src/layout/blocks/header/header.scss */
+header li {
+  list-style-type: none
+}
+/* line 49, src/layout/blocks/header/header.scss */
+header ul {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px
+}
+/* line 56, src/layout/blocks/header/header.scss */
+header menu.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: #deecec;
+  background-color: #deecec
+}
+/* line 69, src/layout/blocks/header/header.scss */
+header a {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+  text-decoration: none;
+  color: var(--color-main);
+  -webkit-transition: 400ms ease;
+  -o-transition: 400ms ease;
+  transition: 400ms ease
+}
+/* line 78, src/layout/blocks/header/header.scss */
+header a :hover {
+  color: #38969b
+}
+/* line 84, src/layout/blocks/header/header.scss */
+header .callback_btn {
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  cursor: pointer;
+  -webkit-transition: ease 300ms;
+  -o-transition: ease 300ms;
+  transition: ease 300ms;
+  background: #32868a;
+  color: #fff
+}
+/* line 98, src/layout/blocks/header/header.scss */
+header .callback_btn:hover {
+  background: #38969b;
+  color: #fff
+}
+/* line 109, src/layout/blocks/header/header.scss */
+#form_modal {
+  background-color: #8fc0c3;
+  display: none;
+  width: 500px;
+  height: 50vh;
+  z-index: -3;
+  border-radius: 6px;
+  position: absolute;
+  top: 20vh;
+  left: calc(50vw - 250px);
+  padding: 30px
+}
+/* line 123, src/layout/blocks/header/header.scss */
+#form_modal.show {
+  z-index: 3;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: absolute;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center
+}
+/* line 132, src/layout/blocks/header/header.scss */
+#form_modal .title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 124.7%;
+  margin-bottom: 45px;
+  color: #181818
+}
+/* line 144, src/layout/blocks/header/header.scss */
+#form_modal form {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column
+}
+/* line 149, src/layout/blocks/header/header.scss */
+#form_modal input {
+  background: #FFFFFF;
+  border-radius: 60px;
+  padding: 24px 38px;
+  margin-bottom: 17px
+}
+/* line 156, src/layout/blocks/header/header.scss */
+#form_modal .submit {
+  cursor: pointer;
+  border-radius: 50px;
+  -webkit-box-shadow: 0px 12px 32px rgba(107, 129, 129, 0.42);
+  box-shadow: 0px 12px 32px rgba(107, 129, 129, 0.42);
+  padding: 24px 38px;
+  background: #32868a;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 112.7%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF
+}
+/* line 173, src/layout/blocks/header/header.scss */
+#close {
+  -webkit-align-self: flex-end;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+  cursor: pointer
+}
+/* line 178, src/layout/blocks/header/header.scss */
+#shadow {
+  display: none;
+  background-color: #263435d2;
+  z-index: -3
+}
+/* line 183, src/layout/blocks/header/header.scss */
+#shadow.show {
+  z-index: 2;
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0
+}
+/* line 17, src/layout/blocks/footer/footer.scss */
+#toTop {
+  position: fixed;
+  bottom: 45px;
+  right: 45px;
+  border-radius: 100px;
+  background-color: #32868a;
+  padding: 15px;
+  cursor: pointer;
+  color: #fff;
+  font-weight: 600
+}
+/*# sourceMappingURL=common.css.map */
